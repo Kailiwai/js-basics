@@ -21,7 +21,19 @@ console.log(pet);  // <= this should print out sebastian the pug
 
 * Assign your own string values to each variable and console.log each variable.
 */
-
+var me = {
+    firstName: "George",
+    lastName: "Kailiwai",
+    birthPlace: "Tokyo, Japan",
+    favFood: "veggies",
+    favDrink: "water",
+    favSong: "Cant Get No Satisfaction by the Rolling Stones",
+    favAnimal: "dog",
+    favColor: "black",
+    favSport: "kettle bells",
+    favDoughnut: "apple fritter"
+};
+console.log(me);
 
 /*
 * #2
@@ -31,7 +43,16 @@ console.log(pet);  // <= this should print out sebastian the pug
 *
 * Assign your own number values to each variable and console.log each variable.
 */
-
+var meAgain = {
+    favNumber: 3,
+    yourShoeSize: 12,
+    thatOnePrinceSong: "Purple Rain",
+    floorsAlaMoanaHotel: 36,
+    numOfJapanPrefectures: 12,
+    numOfABCstoresinHi: 1000000,
+    cheesecakesFlavAtCheeseCakeFac: 20
+}
+console.log(meAgain);
 
 /*
 * #3
@@ -47,6 +68,17 @@ console.log(pet);  // <= this should print out sebastian the pug
 * Console.log each variable.
 *
 */
+var likesMcDonalds = 3 > 2;
+console.log(likesMcDonalds);
+
+var likesWendys = 1 > 2;
+console.log(likesWendys);
+
+var eatsDoughnuts = true;
+console.log(eatsDoughnuts);
+
+var ownsRedShoes = false;
+console.log(ownsRedShoes);
 
 //For example:
 //Make me True:
@@ -54,20 +86,24 @@ var booya1 = 3 > 2;
 console.log(booya1);
 
 //Make me False:
-var booya2;
+var booya2 = 1 > 2;
+console.log("booya2 is " + booya2);
 
 //Make me True:
-var booya3;
+var booya3 = eatsDoughnuts !== ownsRedShoes;
+console.log(booya3);
 
 //Make me False:
-var booya4;
+var booya4 = 3 < 2;
+console.log("booya4 is " + booya4);
 
 //Make me True:
-var booya5; 
+var booya5 = 2 >= 2;
+console.log("booya5 should be true: " + booya5); 
 
 //Make me False:
-var booya6;
-
+var booya6 = 1 !== 1;
+console.log("booya6 should be false: " + booya6);
 
 /*
 * #4
@@ -77,6 +113,10 @@ var booya6;
 *
 * Assign a null value to each variable and console.log each variable. 
 */
+var completedPrepClass = null;
+var traveledToMars = null;
+var buyVicADrink = null;
+console.log(completedPrepClass, traveledToMars, buyVicADrink);
 
 
 /*
@@ -87,6 +127,10 @@ var booya6;
 *
 * Do not assign a value to the variable and console.log each variable.
 */
+var superBowlChamps = undefined;
+var nextPres = undefined;
+var hawaiiRail = undefined;
+console.log(superBowlChamps, nextPres, hawaiiRail);
 
 
 /*
@@ -102,7 +146,9 @@ var booya6;
 *
 * Console.log each variable.
 */
-
+var plateLunch = ['rice', 'beans', 'tofu', 'haupia', 'lomi'];
+console.log(plateLunch);
+//I did not continue making all the arrays asked because they were some of the same.
 
 /*7
 * Accessing values in Arrays
@@ -113,6 +159,11 @@ Console.log the length of this array.
 Console.log only "carrot cake" from this array.
 Console.log only "cool ranch doritos" from this array
 */
+var partyList = ["carrot cake", "gin & tonic", "kalua pork nachos", "double stuff oreos", "cool ranch doritos", "orange chicken"];
+console.log(partyList);
+console.log(partyList.length);
+console.log(partyList[0]);
+console.log(partyList[4]);
 
 
 /*
@@ -127,6 +178,12 @@ Console.log only "cool ranch doritos" from this array
 * i.e "Hi my name is Bruce Wayne and I was born in Gotham."
 */
 
+var firstName = "George";
+var lastName = "Kailiwai";
+var birthPlace = "Tokyo, Japan";
+
+var fullName = firstName + " " + lastName;
+console.log("Hi! My name is " + fullName + " and I was born in " + birthPlace + ".");
 
 /*
 * #9 
@@ -143,7 +200,18 @@ Console.log only "cool ranch doritos" from this array
 *
 * Console.log each new variable.
 */
-
+var num1 = 6;
+var num2 = 2;
+var sum = num1 + num2;
+console.log("The sum should be 12: " + sum);
+var difference = num1 - num2;
+console.log("The differnce should be 4: " + difference);
+var product = num1 * num2;
+console.log("The product should be 12: " + product);
+var quotient = num1 / num2;
+console.log("The quotient should be 3: " + quotient);
+var leftover = num1 % num2; //should be 0
+console.log("The modulo should be 0: " + leftover);
 
 /*
 * #10
@@ -166,7 +234,9 @@ Console.log only "cool ranch doritos" from this array
 */
 
 //Use && to make me True
-var booya7;
+var booya7 = 5 > 3 && 2 > 1;
+console.log("booya7 should be true: ", booya7);
+
 
 //Use && to make me False
 var booya8;
@@ -190,17 +260,31 @@ var booya10;
 * Change the value of the muNum variable by using the assignment operators and console.log myNum after each assignment.
 */
 
-
+var count = 1;
+count += 1
+console.log(count);
 
 //increment and assign 3 (+=):
 
 //decrement and assign 1 (-=):
+var count = 1
+count -= 1
+console.log(count);
 
 //multiple and assign 2 (*=);
+var count = 2;
+count *= 2;
+console.log(count);
 
 //divide and assign 5 (/=);
+var count = 5;
+count /= 5;
+console.log(count);
 
 //modulo and assign 4 (%=);
+var count = 4;
+count %= 4;
+console.log(count);
 
 
 /*===================================================================*/
@@ -220,8 +304,8 @@ var booya10;
 * 
 * Declare a variable pieResult and assign it to the function call.
 * Console.log the variable to see the result.*/
-
-
+function bakePie(){};
+bakePie()
 /*
 * Declare a Function named jump which has a single parameter, height.
 * 
@@ -232,7 +316,10 @@ var booya10;
 * Declare a variable jumpResult and assign it to the function call.
 * Console.log the variable to see the result.
 */
+var animals = ['pigs', 'goats', 'sheep'];
 
+console.log(animals.push('cows'));
+console.log(animals);
 
 /*
 * Declare a Function named makeFood which takes three parameters, ingredient1, ingredient2, recipeName.
